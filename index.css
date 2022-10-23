@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+svg {
+    height: 75px;
+    width: 75px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Main content for email*/
+
+.email {
+    height: 25px;
+    width: 275px;
+    background-color: white;
+}
+
+.submit_button {
+    display: flex;
+    background-color: #f84f4f;
+}
+
+.submit_button:hover {
+    background-color: #bc75ba;
+}
+
+/* Main info*/
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+}
+
+i {
+    justify-self: center;
+    align-self: center;
+    color: #799742;
+    padding-right: 45px;
+
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3 {
+    grid-columns: 2;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Original-T {
+    width: 20%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.premiuminfo,
+.qualityinfo,
+.shippinginfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_properties {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+.sec4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 23px;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+    max-width: 1000px;
+}
+
+footer {
+    background-color: #dddddd;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+nav {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.li-text {
+    list-style: none;
+
+}
+
+.ul-text {
+    display: flex;
+    fflex-direction: row;
+}
+
+@media(max-width: 576px) {
+    body {
+        margin: 0;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        background-color: #eeeeee;
+        position: sticky;
+        top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+        align-items: center;
+    }
